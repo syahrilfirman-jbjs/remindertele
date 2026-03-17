@@ -8,7 +8,7 @@ import pytz
 # --- KONFIGURASI ---
 TOKEN = "7815476159:AAHQYXnTpKkCvM2hqR-jP9mLoz019MzNTHI"
 CHAT_ID = "-1002511736262" 
-PESAN_REMINDER = "⏰ PERSIAPAN! Mohon lakukan persiapan menyanyikan lagu Indonesia Raya"
+PESAN_REMINDER = "🔔 PERSIAPAN untuk menyanyikan Lagu Indonesia Raya 🇮🇩"
 
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
@@ -30,8 +30,8 @@ scheduler.add_job(
     send_reminder, 
     'cron', 
     day_of_week='mon-fri', 
-    hour=10, 
-    minute=42
+    hour=9, 
+    minute=55
 )
 scheduler.start()
 
