@@ -30,8 +30,8 @@ scheduler.add_job(
     send_reminder, 
     'cron', 
     day_of_week='mon-fri', 
-    hour=9, 
-    minute=57
+    hour=10, 
+    minute=42
 )
 scheduler.start()
 
